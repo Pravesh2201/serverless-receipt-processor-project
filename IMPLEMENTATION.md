@@ -13,11 +13,10 @@ This guide walks you through the complete setup of the serverless receipt proces
 4. Click **Create bucket**
 5. Inside the bucket, create a folder named **`incoming/`** — this is where you will upload receipt files
 
-### Screenshots:
 <img width="979" height="399" alt="s3-bucket" src="https://github.com/user-attachments/assets/543f72c5-6dfa-4baa-99e3-da8bff43ecce" />
 
+<img width="1462" height="479" alt="s3-object" src="https://github.com/user-attachments/assets/084952c0-20b9-43f2-89ac-50dda271cb50" />
 
-> 📸 *Add your `incoming/` folder screenshot here*
 
 ---
 
@@ -30,10 +29,11 @@ This guide walks you through the complete setup of the serverless receipt proces
 4. Sort key: `date` (String)
 5. Click **Create**
 
-### Screenshots:
-> 📸 *Add your DynamoDB table creation screenshot here*
+<img width="1456" height="721" alt="dynamodb-table" src="https://github.com/user-attachments/assets/2150f424-48a6-497e-af1a-a980df800b81" />
 
-> 📸 *Add your DynamoDB table overview screenshot here*
+
+<img width="1448" height="756" alt="dynamodb-table-update" src="https://github.com/user-attachments/assets/b08f0b12-449c-4d43-9d1b-6cdb6788594c" />
+
 
 ---
 
@@ -48,8 +48,9 @@ This guide walks you through the complete setup of the serverless receipt proces
 
 > ⚠️ **Note:** New AWS accounts are in SES sandbox mode. Both sender AND recipient emails must be verified in sandbox.
 
-### Screenshots:
-> 📸 *Add your SES Verified Identities screenshot here (showing both emails as Verified)*
+<img width="1454" height="659" alt="ses" src="https://github.com/user-attachments/assets/d013c4b9-5120-49a3-9470-5eaa48b464bc" />
+
+<img width="1461" height="734" alt="ses1" src="https://github.com/user-attachments/assets/34f58f41-34a5-46b4-b102-9ea354943bb4" />
 
 ---
 
@@ -67,8 +68,9 @@ This guide walks you through the complete setup of the serverless receipt proces
 4. Name the role: `LambdaReceiptProcessingRole`
 5. Click **Create role**
 
-### Screenshots:
-> 📸 *Add your IAM role permissions screenshot here (showing all 5 policies)*
+<img width="1335" height="761" alt="IAM-role" src="https://github.com/user-attachments/assets/a66cfb32-eefe-43a6-84e5-ab8e1eaf666f" />
+
+<img width="1463" height="718" alt="Role-permission" src="https://github.com/user-attachments/assets/711f471c-3820-45b6-9c81-77b836df5c0b" />
 
 ---
 
@@ -96,12 +98,14 @@ Go to **Configuration → General configuration → Edit**
 - Change timeout from `3 sec` → **`2 min 0 sec`**
 - Click **Save**
 
-### Screenshots:
-> 📸 *Add your Lambda function overview screenshot here*
+<img width="1326" height="746" alt="lambdafn" src="https://github.com/user-attachments/assets/66ac80be-411e-4880-bad2-29c433a19139" />
 
-> 📸 *Add your environment variables screenshot here*
+<img width="1458" height="754" alt="lambda-py-fn" src="https://github.com/user-attachments/assets/fb19bbb2-20f5-4f1c-b0f3-d4226323047e" />
 
-> 📸 *Add your timeout configuration screenshot here*
+<img width="1090" height="282" alt="labda-env" src="https://github.com/user-attachments/assets/a260b870-4d71-42c5-8e53-6f2e12eac864" />
+
+<img width="1348" height="761" alt="lambda-basic-setting" src="https://github.com/user-attachments/assets/e9ac1463-05c0-4939-b1f0-7ef429acb808" />
+
 
 ---
 
@@ -117,10 +121,10 @@ Go to **Configuration → General configuration → Edit**
    - Destination: **Lambda function** → Select `ProcessReceiptFunction`
 4. Click **Save changes**
 
-### Screenshots:
-> 📸 *Add your S3 event notification configuration screenshot here*
+<img width="1299" height="735" alt="s3-bucket-event" src="https://github.com/user-attachments/assets/9f9432b1-6c43-4d73-bb92-f0aa390a86cd" />
 
-> 📸 *Add your S3 event notification saved confirmation screenshot here*
+<img width="1444" height="675" alt="s3-bucket-event1" src="https://github.com/user-attachments/assets/e08252fe-f63b-41a6-b49e-5f29d27bb0cd" />
+
 
 ---
 
@@ -150,12 +154,13 @@ Click **Test** — you should see `"Receipt processed successfully!"` in the res
 3. Check your recipient email inbox (also check spam folder)
 4. Check **DynamoDB → Receipts-table → Explore items** for the stored record
 
-### Screenshots:
-> 📸 *Add your Lambda test success screenshot here*
+<img width="1451" height="757" alt="lambda-cloudwatch" src="https://github.com/user-attachments/assets/ba384fea-f1e5-4ea5-b8f0-54561fb79675" />
 
-> 📸 *Add your DynamoDB stored record screenshot here*
 
-> 📸 *Add your received email screenshot here*
+<img width="1448" height="756" alt="dynamodb-table-update" src="https://github.com/user-attachments/assets/f3d848c2-8e12-41d1-9d33-58ec43c8e87d" />
+
+
+<img width="1089" height="684" alt="gmail-received -mail" src="https://github.com/user-attachments/assets/88e1f13e-86ce-440f-a032-85d1ebc49716" />
 
 ---
 
@@ -172,8 +177,8 @@ If something doesn't work, check the logs:
    - `Receipt data stored in DynamoDB` ✅
    - `Email notification sent to ...` ✅
 
-### Screenshots:
-> 📸 *Add your CloudWatch logs screenshot here*
+<img width="1424" height="755" alt="cloudwatch-log" src="https://github.com/user-attachments/assets/f285aa86-54ee-4b42-a1ba-ad8f714bb1db" />
+
 
 ---
 
@@ -193,4 +198,4 @@ If something doesn't work, check the logs:
 
 ---
 
-*✍️ Author: **Pravesh Gangwar***
+*✍️ Author: **Pravesh Kumar***
