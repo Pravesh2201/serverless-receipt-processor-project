@@ -154,14 +154,14 @@ Click **Test** — you should see `"Receipt processed successfully!"` in the res
 2. Wait 30–60 seconds
 3. Check your recipient email inbox (also check spam folder)
 4. Check **DynamoDB → Receipts-table → Explore items** for the stored record
+   
+<img width="1456" height="382" alt="s3_demorecipt" src="https://github.com/user-attachments/assets/609d9ecd-a8a9-47e0-95b4-b29bb322a519" />
 
-<img width="1451" height="757" alt="lambda-cloudwatch" src="https://github.com/user-attachments/assets/ba384fea-f1e5-4ea5-b8f0-54561fb79675" />
-
+<img width="1456" height="704" alt="test_output" src="https://github.com/user-attachments/assets/9befb9c7-955c-42bd-8870-734140196733" />
 
 <img width="1448" height="756" alt="dynamodb-table-update" src="https://github.com/user-attachments/assets/f3d848c2-8e12-41d1-9d33-58ec43c8e87d" />
 
-
-<img width="1089" height="684" alt="gmail-received -mail" src="https://github.com/user-attachments/assets/88e1f13e-86ce-440f-a032-85d1ebc49716" />
+<img width="1439" height="690" alt="gmail_received_mail" src="https://github.com/user-attachments/assets/87bc2a92-a812-44ae-8c3d-324fb8df599e" />
 
 ---
 
@@ -178,7 +178,7 @@ If something doesn't work, check the logs:
    - `Receipt data stored in DynamoDB` ✅
    - `Email notification sent to ...` ✅
 
-<img width="1424" height="755" alt="cloudwatch-log" src="https://github.com/user-attachments/assets/f285aa86-54ee-4b42-a1ba-ad8f714bb1db" />
+<img width="1446" height="643" alt="cloudwatch_log_new" src="https://github.com/user-attachments/assets/01e665c7-09c6-4698-99f2-092cebbdb875" />
 
 
 ---
