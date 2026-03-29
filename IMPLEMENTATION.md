@@ -8,7 +8,7 @@ This guide walks you through the complete setup of the serverless receipt proces
 
 ### Steps:
 1. Go to the **S3 Console** → Click **Create Bucket**
-2. Name your bucket (e.g., `storage-receipt-yourname`)
+2. Name your bucket (e.g., `storage-receipt-pravesh22`)
 3. Choose a region (e.g., `ap-south-1`)
 4. Click **Create bucket**
 5. Inside the bucket, create a folder named **`incoming/`** — this is where you will upload receipt files
